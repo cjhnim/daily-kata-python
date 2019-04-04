@@ -1,7 +1,6 @@
-class Wrapper():
+class Wrapper:
     def __init__(self):
         pass
-
     @staticmethod
     def wrap(text, limit):
         if len(text) <= limit:
@@ -10,10 +9,10 @@ class Wrapper():
         space = text.rfind(' ', 0, limit)
         length = Wrapper.word_length(text[space+1:])
         wrap_index = space
-        if(length > limit):
+        if length > limit:
             wrap_index = limit
-        
         return text[:wrap_index] + "--" + Wrapper.wrap(text[wrap_index:].strip(), limit)
+
     @staticmethod
     def word_length(text):
         if " " in text:
