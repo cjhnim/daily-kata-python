@@ -1,6 +1,6 @@
 {
     "python.unitTest.pyTestArgs": [
-        "skeleton"
+        "maxbintree"
     ],
     "python.unitTest.unittestEnabled": false,
     "python.unitTest.nosetestsEnabled": false,
